@@ -1,0 +1,207 @@
+/* online-style.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fbff;
+    color: #333;
+  }
+  
+  .controller-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    color: #0066cc;
+  }
+  
+  .controls {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .controls h2 {
+    margin-bottom: 16px;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .button-group button {
+    padding: 12px 24px;
+    background-color: #007acc;
+    border: none;
+    color: white;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+
+  .toggle-control {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1em;
+  }
+  
+  .joystick-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .joystick-layout .row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dir-button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .dir-button:hover {
+    background-color: #005f99;
+  }
+  
+  .video {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  
+  .button-group button:hover {
+    background-color: #005f99;
+  }
+  
+  .status {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .status h2 {
+    margin-bottom: 10px;
+  }
+  
+  #status-text {
+    font-weight: bold;
+    color: #007700;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+
+  /*컨트롤러 및 cli 스타일*/
+  .controls-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .left-panel,
+  .right-panel {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .cli-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #cli-input {
+    flex: 1;
+    padding: 8px;
+    font-family: monospace;
+  }
+  
+  .cli-log {
+    background: #111;
+    color: #0f0;
+    font-family: monospace;
+    padding: 10px;
+    height: 150px;
+    overflow-y: auto;
+    border-radius: 6px;
+    border: 1px solid #333;
+  }
+
+  /*팝업버튼 스타일*/
+  .popup {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  }
+  
+  .popup select {
+    padding: 8px 16px;
+    font-size: 1em;
+    margin: 10px 0;
+  }
+
+  .popup button {
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .popup button:hover {
+    background-color: #005f99;
+  }
+  
+  /* 흐림 처리 */
+  .blurred {
+    filter: blur(4px);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  
