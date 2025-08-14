@@ -49,9 +49,9 @@ def generate_launch_description():
                 'roll_steer_gain': 0.15,
                 'compensate_in_slow': True,
                 'pitch_slow_deg': 10.0,
-                'pitch_stop_deg': 50.0,
+                'pitch_stop_deg': 100000.0,
                 'roll_slow_deg': 8.0,
-                'roll_stop_deg': 20.0,
+                'roll_stop_deg': 100000.0,
                 'slow_scale': 0.3
             }],
             arguments=['--ros-args', '--log-level', 'imu_stabilizer:=info']
